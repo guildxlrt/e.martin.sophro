@@ -1,0 +1,29 @@
+@import "../../../../styles/index.scss";
+
+
+.HomeSecondHeader {
+    top: 64px;
+    @media (max-width: 768px) {
+        top: 24px;
+    }
+}
+
+.HomeSecondFooter {
+    bottom: 80px;
+    text-align: center;
+    @media (max-width: 768px) {
+        bottom: 32px;
+    }
+    > span {
+        font-size: 26px;
+    }
+}
+
+.HomeSecondHeader, .HomeSecondFooter {
+    position: relative;
+}
+
+// .hero-body > .columns > .column > .bubble {
+//     margin-left: auto;
+//     margin-right: auto;
+// }

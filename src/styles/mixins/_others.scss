@@ -1,0 +1,32 @@
+@mixin blurFilter($amount-value) {
+  backdrop-filter: blur($amount-value);
+  -webkit-backdrop-filter: blur($amount-value);
+}
+
+@mixin reCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin textBorder($color) {
+  text-shadow:
+    2px 0 $color,
+    -2px 0 $color,
+    0 2px $color,
+    0 -2px $color,
+    1px 1px $color,
+    -1px -1px $color,
+    1px -1px $color,
+    -1px 1px $color;
+}

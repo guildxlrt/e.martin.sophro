@@ -1,0 +1,41 @@
+@import "../../../styles/index.scss";
+
+.Footer {
+    min-height: 336px;
+    @include smoothShadow(6px, 3px, $shadow, 0.4);
+    @include linGradient($to-botom-right, lighten($footer, 15%), $footer);
+    font-size: 18px;
+  
+    > .container {
+      > ul {
+        color: $grey-dark;
+        margin: 72px;
+      }
+      
+      > .columns,
+      > ul > li {
+        a {
+          color: $link-footer;
+      
+          &:hover {
+            color: $link-footer-hover;
+          }
+        }
+      }
+    }
+}
+
+.FooterUL {
+    color: $grey-dark;
+    margin: 72px;
+}
+     
+
+.FootLnkClr {
+    color: $link-footer;
+
+    &:hover {
+    color: $link-footer-hover;
+    }
+}
+  

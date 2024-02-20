@@ -1,0 +1,29 @@
+@import "../../../../styles/index.scss";
+
+.HomeFirstColumn {
+  @extend .column;
+    margin-top: 64px;
+}
+
+.HomeFirstText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    > span{
+      letter-spacing:1px;
+    }
+}
+
+.HomeFirstImage {
+    @include smoothShadow(6px, 3px, $shadow, 0.4);
+
+    height: auto;
+    max-width: 520px;
+    width: 100%;
+    border-radius: 25%;
+    max-height: 520px;
+
+    @media (max-width: 768px) {
+      border-radius: 24px;
+    }
+}

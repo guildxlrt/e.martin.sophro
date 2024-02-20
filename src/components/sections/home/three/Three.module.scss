@@ -1,0 +1,29 @@
+@import "../../../../styles/index.scss";
+
+.HomeThree  {
+    @extend .section;
+} 
+
+.HomeThreeTitle {
+    @extend .title;
+    margin: 104px 0px;
+}
+
+.HomeColumns {
+    @extend .columns;
+    margin: 104px 0px;
+      
+    @media (max-width: 767px) {
+      margin: 52px 0px;
+    }
+}
+
+.HomeColumn {
+    @extend .subtitle;
+    @extend .column;
+
+    @media (max-width: 767px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

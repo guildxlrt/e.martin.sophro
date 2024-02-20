@@ -1,0 +1,15 @@
+@import "../../../../styles/index.scss";
+
+.Partners {
+    @extend .section;
+    > .container > .title {
+      margin-bottom: 64px;
+    }
+    > .container > .columns {
+      padding: 48px 0px;
+      border-radius: 20px;
+      @media (min-width: 496px) {
+        border-radius: 60px;
+      }
+    }
+  }

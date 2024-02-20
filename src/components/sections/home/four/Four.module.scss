@@ -1,0 +1,51 @@
+@import "../../../../styles/index.scss";
+
+.HomeFour {
+  @extend .hero;
+
+  >.hero-header {
+    margin-top: 104px;
+    @include reCenter;
+    flex-direction: column;
+
+    > .title {
+      position: relative;
+      top: 25px;
+      @media (max-width: 767px) {
+        top: 0px;
+      }
+    }
+    > a {
+      position: relative;
+      left: 0px;
+      top: -85px;
+      left: -275px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  >.hero-body {
+    padding-top: 0px;
+    letter-spacing:1px;
+    text-indent: 24px;
+    @media (max-width: 767px) {
+      text-indent: 0px;
+    }
+
+    position: relative;
+    top: -35px;
+    @media (max-width: 767px) {
+      top: 0px;
+    }
+
+    .container {
+      >p{
+        line-height:2.0rem;
+      }
+    }
+  }
+  >.hero-footer {
+    margin-bottom: 48px;
+  }
+}

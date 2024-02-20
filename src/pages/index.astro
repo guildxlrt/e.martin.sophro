@@ -1,41 +1,35 @@
 ---
 // Component Imports
-import Counter from '../components/Counter';
+import "../styles/index.scss"
+import { Header, Footer, ClientsComments, Partners, Banner, HomeFirst, HomeSecond, HomeThree, HomeFour} from "../components/sections"
 
-import { signal } from '@preact/signals';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
-
-const count = signal(0);
+const meta = {
+	lang: 'fr',
+	title: "Acceuil",
+	description: "Trouvez votre harmonie intérieure !",
+}
 ---
 
-<html lang="en">
+<html lang={meta.lang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="16x16" />
+		<title>{meta.title}</title>
+		<meta name="description" content={meta.description} />
 	</head>
 	<body>
-		<main>
-			<Counter count={count} client:visible>
-				<h1>Hello, Preact 1!</h1>
-			</Counter>
-
-			<Counter count={count} client:visible>
-				<h1>Hello, Preact 2!</h1>
-			</Counter>
+		<Header client:visible />
+		<>
+			<Banner/>
+			<HomeFirst/>
+			<HomeSecond/>
+			<HomeThree/>
+			<HomeFour/>
+			<ClientsComments/>
+			<Partners/>
 		</main>
+		<Footer/>
 	</body>
 </html>

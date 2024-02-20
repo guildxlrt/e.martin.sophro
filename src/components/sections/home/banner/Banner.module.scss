@@ -1,0 +1,29 @@
+@import "../../../../styles/index.scss";
+
+.HomeBanner {
+    background-image: url('/backgrounds/banners/banner.webp');
+    background-position: center top;
+    background-size: cover;
+    @include smoothShadow(12px, 6px, $shadow, 0.3);
+}
+
+.HomeBannerBody {
+    @include reCenter;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include anim-opacity($bezier-2);
+  }
+  
+.HomeBannerTitle {
+color: $light;
+padding-bottom: 52px;
+@include textBorder(transparentize($dark, 0.6));
+
+    @media (max-width: 1024px) {
+        font-size: 2.4rem;
+    }
+    @media (max-width: 540px) {
+        font-size: 2rem;
+    }
+}

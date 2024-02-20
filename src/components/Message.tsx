@@ -1,5 +1,5 @@
-import './Message.css';
+import "./Message.css";
 
 export default function Message({ children }) {
-	return <div class="message">{children}</div>;
+  return <div class="message">{children}</div>;
 }

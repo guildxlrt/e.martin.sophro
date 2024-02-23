@@ -28,20 +28,23 @@ export default function Header() {
               <span class="has-text-dark"></span>
               <span class="has-text-dark"></span>
             </button>
-            <a className={`navbar-item ${Styles.Logo}`} href="#">
+            <a className={`navbar-item ${Styles.Logo}`} href="/">
               <img src="/logos/logo.webp" class="logo" alt="logo" />
             </a>
           </div>
 
           <div id="burger" className={`navbar-menu ${open ? "is-active" : ""}`}>
-            <div className={Styles.NavbarEnd}>
-              <a href="#" className={Styles.NavbarItem}>
+            <div className={`navbar-end ${Styles.NavbarEnd}`}>
+              <a
+                href="/presentation"
+                className={`navbar-item ${Styles.NavbarItem}`}
+              >
                 Qui suis-je ?
               </a>
-              <a href="#" className={Styles.NavbarItem}>
+              <a href="#" className={`navbar-item ${Styles.NavbarItem}`}>
                 Séances
               </a>
-              <a href="#" className={Styles.NavbarItem}>
+              <a href="/" className={`navbar-item ${Styles.NavbarItem}`}>
                 <div>Acceuil</div>
               </a>
             </div>

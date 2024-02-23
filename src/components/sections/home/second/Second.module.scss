@@ -1,4 +1,4 @@
-@import "../../../../styles/index.scss";
+@import "../../../../styles/base/index.scss";
 
 
 .HomeSecondHeader {
@@ -11,6 +11,7 @@
 .HomeSecondFooter {
     bottom: 80px;
     text-align: center;
+
     @media (max-width: 768px) {
         bottom: 32px;
     }

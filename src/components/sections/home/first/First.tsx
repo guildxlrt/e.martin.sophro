@@ -15,7 +15,7 @@ export default function HomeFirst() {
           />
         </div>
         <div
-          className={`is-half ${Styles.HomeFirstColumn} ${Styles.HomeFirstText}`}
+          className={`column is-half ${Styles.HomeFirstColumn} ${Styles.HomeFirstText}`}
         >
           <span class="subtitle is-4">
             Les situations de la vie quotidienne peuvent générer stress,

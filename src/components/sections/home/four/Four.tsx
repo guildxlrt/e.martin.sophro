@@ -4,7 +4,7 @@ export default function ClientsComments() {
   return (
     <section
       id="home-four"
-      className={`${Styles.HomeFour} is-halfheight is-secondary`}
+      className={`hero is-halfheight is-secondary ${Styles.HomeFour}`}
     >
       <div class="hero-header">
         <h2 class="title is-3 has-text-centered">Mon accompagnement</h2>

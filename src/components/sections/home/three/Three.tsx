@@ -2,22 +2,27 @@ import Styles from "./Three.module.scss";
 
 export default function HomeThree() {
   return (
-    <section
-      id="home-three"
-      className={`has-text-centered is-large ${Styles.HomeThree}`}
-    >
-      <h2 class={Styles.HomeThreeTitle}>La Sophrologie : C'est pour qui ?</h2>
+    <section id="home-three" className={`section has-text-centered is-large`}>
+      <h2 class={`title ${Styles.HomeThreeTitle}`}>
+        La Sophrologie : C'est pour qui ?
+      </h2>
       <div class="container">
-        <div className={Styles.HomeColumns}>
-          <span className={`is-one-third is-marginless ${Styles.HomeColumn}`}>
+        <div className={`columns ${Styles.HomeColumns}`}>
+          <span
+            className={`subtitle column is-one-third is-marginless ${Styles.HomeColumn}`}
+          >
             Toutes les personnes désireuses de mieux se connaître et d’avancer
             vers leurs objectifs, quels qu’ils soient.
           </span>
-          <span className={`is-one-third is-marginless ${Styles.HomeColumn}`}>
+          <span
+            className={`subtitle column is-one-third is-marginless ${Styles.HomeColumn}`}
+          >
             Les personnes souhaitant améliorer leur qualité de vie, se relaxer,
             prendre un moment pour elles.
           </span>
-          <span className={`is-one-third is-marginless ${Styles.HomeColumn}`}>
+          <span
+            className={`subtitle column is-one-third is-marginless ${Styles.HomeColumn}`}
+          >
             Tous ceux qui rencontrent un moment difficile et qui souhaitent
             avancer plus sereinement et en confiance.
           </span>

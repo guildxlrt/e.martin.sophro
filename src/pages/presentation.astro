@@ -1,29 +1,21 @@
 ---
 // Component Imports
 import Layout from "../layouts/Layout.astro"
-import {
-	ClientsComments,
-	Partners,
-	Banner,
-	HomeFirst,
-	HomeSecond,
-	HomeThree,
-	HomeFour,
-} from "../components/sections"
+import { About } from "../components/sections"
 
 const meta = {
 	lang: "fr" as "fr" | "en",
-	title: "Acceuil",
+	title: "A p",
 	description: "Trouvez votre harmonie intérieure !",
 } as const
+
+
+import * as presentation from '../content/about/about.md';
+import { Content } from '../content/about/about.md';
 ---
 
 <Layout lang={meta.lang} title={meta.title} description={meta.description}>
-	<Banner />
-	<HomeFirst />
-	<HomeSecond />
-	<HomeThree />
-	<HomeFour />
-	<ClientsComments />
-	<Partners />
+	<About title={presentation.frontmatter.title}>
+		<Content />
+	</About>
 </Layout>

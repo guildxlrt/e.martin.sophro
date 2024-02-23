@@ -1,0 +1,106 @@
+@import "../../../styles/base/index.scss";
+
+.About {
+  padding-top: 128px;
+  @media (max-width: 1023px) {
+      padding: 104px 0px 104px 0px;
+  }
+}
+  
+.Article {
+  @include smoothShadow(6px, 1px, $shadow, 0.5);
+  @include anim-opacity($bezier-2);
+
+  @media (max-width: 767px) {
+      box-shadow: none;
+  }
+  @media (min-width: 768px) {
+      @include blurFilter(2px);
+      background-color: transparentize($about, 0.6);
+  }
+
+  @media (min-width: 540px) and (max-width: 1023px) {
+      margin: 20px;
+      border-radius: 25% 55% 38% 5% / 6% 25% 13% 25%;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 52px;
+    border-radius: 65% 13% 73% 8% / 8% 43% 18% 65%;
+  }
+}
+
+.Title,
+.Content {
+    letter-spacing: 1px;
+    text-indent: 24px;
+    @media (max-width: 767px) {
+    text-indent: 0px;
+}
+  
+  @media (max-width: 539px) {
+    padding: 24px;
+    margin: 0px;
+  }
+  @media (min-width: 1024px) {
+    padding: 24px;
+    margin: 52px 52px 52px 52px;
+  }
+}
+
+.Content {
+  @media (min-width: 540px) and (max-width: 1023px) {
+    padding: 0px 36px 72px 36px;
+  }
+  
+  > p {
+    line-height: 1.75rem;
+  }
+}
+
+.Title {
+  margin-left: 175px;
+
+  @media (min-width: 540px) and (max-width: 1023px) {
+    padding: 72px 36px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 150px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: 540px) and (max-width: 767px) {
+    margin-left: 160px;
+    margin-bottom: 0px;
+  }
+  @media (max-width: 539px) {
+    margin-left: 24px;
+    margin-bottom: 0px;
+  }  
+}
+
+
+.Portrait {
+  height: 185px;
+  width: 185px;
+
+  position: absolute;
+  left: 30px;
+  top: 55px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 135px;
+    width: 135px;
+    left: 20px;
+    top: 30px;
+  }
+  @media (min-width: 540px) and (max-width: 767px) {
+    height: 145px;
+    width: 145px;
+    left: 20px;
+    top: 15px;
+  }
+  @media (max-width: 539px) {
+    display: none;
+  }
+}

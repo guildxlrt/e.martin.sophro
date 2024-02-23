@@ -1,10 +1,9 @@
-@import "../../../../styles/index.scss";
+@import "../../../../styles/base/index.scss";
 
 .HomeFour {
-  @extend .hero;
-
   >.hero-header {
     margin-top: 104px;
+    
     @include reCenter;
     flex-direction: column;
 

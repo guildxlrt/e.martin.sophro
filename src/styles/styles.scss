@@ -1,10 +1,7 @@
-@import "base/fonts";
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 @import "base/index.scss";
-@import "keyframes/index.scss";
-@import "mixins/index.scss";
 
-// Import Bulma CSS framwork
+// BULMA FRAMEWORK
 @import "/node_modules/bulma/bulma.sass";

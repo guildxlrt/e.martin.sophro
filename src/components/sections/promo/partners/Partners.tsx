@@ -4,7 +4,7 @@ export default function Partners() {
   return (
     <section
       id="partners"
-      className={`${Styles.Partners} has-text-centered is-large`}
+      className={`section has-text-centered is-large ${Styles.Partners}`}
     >
       <div class="container">
         <h2 class="title">Ils m'ont fait confiance</h2>
